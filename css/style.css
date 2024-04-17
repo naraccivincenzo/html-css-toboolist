@@ -30,11 +30,13 @@ header {
     display: inline-block;
     margin: 1% 0 1% 0;
     border: solid 1px lightgray;
+    background-color: rgb(255, 255, 255);
 }
 
 .add-task {
     margin-left: 5%;
     background-color: rgb(20, 175, 245);
+    border-style: none;
 }
 
 /* list setup */
@@ -54,93 +56,64 @@ h3::before {
 }
 
 /* before task */
-.done::before {
-    content: "\2713";
+.general::before {
     font-size: 10px;
     padding: 1px;
     margin-right: 2%;
-    color: rgb(44, 198, 71);
-    border: solid rgb(44, 198, 71) 1px;
     border-radius: 50%;
     display: inline-block;
+    border: solid rgb(44, 198, 71) 1px;
+    color: rgb(44, 198, 71);
+}
+
+.done::before {
+    content: "\2713";
 }
 
 .undone::before {
     content: "\2717";
-    font-size: 10px;
-    padding: 1px;
-    margin-right: 2%;
     color: rgb(255, 0, 0);
-    border: solid rgb(255, 0, 0) 1px;
-    border-radius: 50%;
-    display: inline-block;
+    border-color: rgb(255, 0, 0);
 }
 
 /* after task */
-.editorial::after {
-    content: "Editorial";
+.common::after {
     color: rgb(255, 255, 255);
-    background-color: rgb(20, 175, 245);
     font-size: 10px;
     padding: 1%;
-    margin-left: 2%;
+    margin-left: 1%;
     border-radius: 10px;
     display: inline-block;
+}
+
+.editorial::after {
+    content: "Editorial";
+    background-color: rgb(20, 175, 245);
 }
 
 .goals::after {
     content: "Q1 Goals";
-    color: rgb(255, 255, 255);
     background-color: rgb(171, 93, 239);
-    font-size: 10px;
-    padding: 1%;
-    margin-left: 2%;
-    border-radius: 10px;
-    display: inline-block;
 }
 
 .recruiting::after {
     content: "Recruiting";
-    color: rgb(255, 255, 255);
     background-color: rgb(44, 198, 171);
-    font-size: 10px;
-    padding: 1%;
-    margin-left: 2%;
-    border-radius: 10px;
-    display: inline-block;
 }
 
 .mobile::after {
     content: "Mobile";
-    color: rgb(255, 255, 255);
     background-color: rgb(255, 155, 0);
-    font-size: 10px;
-    padding: 1%;
-    margin-left: 2%;
-    border-radius: 10px;
-    display: inline-block;
 }
 
 .website::after {
     content: "Website";
-    color: rgb(255, 255, 255);
     background-color: rgb(236, 74, 157);
-    font-size: 10px;
-    padding: 1%;
-    margin-left: 2%;
-    border-radius: 10px;
-    display: inline-block;
 }
 
 .sales::after {
     content: "Sales";
-    color: rgb(255, 255, 255);
     background-color: rgb(163, 209, 22);
-    font-size: 10px;
-    padding: 1%;
-    margin-left: 2%;
-    border-radius: 10px;
-    display: inline-block;
 }
 
 /* misc */
